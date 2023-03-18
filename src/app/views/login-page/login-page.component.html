@@ -1,0 +1,10 @@
+<div style="padding: 20%; text-align: center">
+  <p>TIPO DE CAMBIO</p>
+  <input type="text" [(ngModel)]="valordelcambio"/>
+  <br />
+  <br />
+  <div>
+    <button (click)="enviarDato()">Enviar valor al componente</button>
+  </div>
+  <app-resultado-conversion [resultado]="restuladoDelCambio" (resetValue)="resetearValores()"></app-resultado-conversion>
+</div>
